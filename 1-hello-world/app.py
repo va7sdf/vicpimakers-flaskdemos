@@ -1,6 +1,6 @@
 ########################################################################
 # "Hello World!" Flask example.
-# 
+#
 # This script was written for the Victoria Raspberry PiMakers And Others
 # Meetup Group presentation on November 27, 2021.
 #
@@ -23,7 +23,7 @@
 from flask import Flask, request
 
 # instantiate flask object ()
-app = Flask(__name__)                   
+app = Flask(__name__)
 
 # register a URL with a function
 @app.route("/")         # route decorator
