@@ -28,9 +28,8 @@ app = Flask(__name__)
 # register a URL with a function
 @app.route("/")         # route decorator
 def hello():            # view function
-    s1 = "<p>Hello World!</p>"
-    s2 = "<p>Your IP:  {}</p>".format(request.remote_addr)
-    return s1 + s2      # return message to browser
+    message = "<p>Hello World!</p>"
+    return message      # return message to browser
 
 if __name__ == "__main__":
 
