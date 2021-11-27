@@ -20,7 +20,7 @@
 ########################################################################
 
 # import required modules
-from flask import Flask, request
+from flask import Flask
 
 # instantiate flask object ()
 app = Flask(__name__)
