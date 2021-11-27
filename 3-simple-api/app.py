@@ -18,6 +18,9 @@
 # cURL
 # https://en.wikipedia.org/wiki/CURL
 #
+# Flask-RESTful extension
+# https://flask-restful.readthedocs.io/
+#
 ########################################################################
 
 import random
