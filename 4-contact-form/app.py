@@ -1,5 +1,5 @@
 ########################################################################
-# Simple web page example
+# Simple contact form example
 #
 # This script was written for the Victoria Raspberry PiMakers And Others
 # Meetup Group presentation on November 27, 2021.
@@ -12,6 +12,7 @@
 # https://www.geeksforgeeks.org/create-contact-us-using-wtforms-in-flask/
 #
 # FURTHER READING
+#
 # https://flask.palletsprojects.com/en/2.0.x/config/#configuration-best-practices
 # 
 ########################################################################
