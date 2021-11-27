@@ -1,30 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Contact Form</title>
+    <title>Contact Form Example</title>
 </head>
 <body>
     <div class="container">
         <h1>Contact Us</h1>
+        <!-- BEGIN FORM -->
         <form method="POST" action="{{ url_for('contact_form') }}">
-        {{ form.csrf_token }}
-        <p>
-            {{ form.name.label }} 
-            <br>
-            {{ form.name }}
-        </p>
-        <p>
-            {{ form.email.label }} 
-            <br>
-            {{ form.email }}
-        </p>
-        <p>
-            {{ form.message.label }} 
-            <br>
-            {{ form.message }}
-        </p>
-        {{ form.submit }}
+            <!-- CSRF protection -->
+            {{ form.csrf_token }}
+            <!-- form controls -->        
+            <p>{{ form.name.label }}<br>{{ form.name }}</p>
+            <p>{{ form.email.label }}<br>{{ form.email }}</p>
+            <p>{{ form.message.label }}<br>{{ form.message }}</p>
+            <!-- form submit button -->
+            {{ form.submit }}
         </form>
+        <!-- END FORM -->
     </div>
 </body>
 </html>
