@@ -35,8 +35,7 @@ def get_pond_temp():
     between 35 °F and 85 °F (the survivable range for koi fish) and its
     equivalent in celsius
 
-    Example using cURL
-    curl http://the-demo.website:5000/pond-temp
+    cURL syntax: curl http://localhost:5000/pond-temp
     """
     temp_f = round(random.uniform(35,85),1)
     temp_c = round((temp_f - 32) / 1.8, 1)
@@ -47,8 +46,7 @@ def set_pond_temp():
     """"
     Demonstrate receiving JSON data
 
-    Example using cURL
-    curl -X POST -H "Content-Type: application/json" -d '{ "farenheit_min" : 40, "farenheight_max" : 75 }' http://the-demo.website:5000/pond-temp
+    cURL syntax: curl -X POST -H "Content-Type: application/json" -d '{ "farenheit_min" : 40, "farenheight_max" : 75 }' http://localhost:5000/pond-temp
     """
     print(request.get_json())
     return '', 204
