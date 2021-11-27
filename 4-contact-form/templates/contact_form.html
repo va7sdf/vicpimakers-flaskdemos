@@ -6,6 +6,15 @@
 <body>
     <div class="container">
         <h1>Contact Us</h1>
+
+        <!-- BEGIN ERROR MESSAGE -->
+        <p>
+            {% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <!-- END ERRORS MESSAGE -->
+
         <!-- BEGIN FORM -->
         <form method="POST" action="{{ url_for('contact_form') }}">
             <!-- CSRF protection -->
@@ -18,6 +27,7 @@
             {{ form.submit }}
         </form>
         <!-- END FORM -->
+
     </div>
 </body>
 </html>
