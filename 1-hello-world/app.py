@@ -23,7 +23,7 @@
 # import required modules
 from flask import Flask
 
-# instantiate flask object ()
+# instantiate flask object
 app = Flask(__name__)
 
 # register a URL with a function
